@@ -6,3 +6,10 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+node.default["gitlab"]["https"] = true
+
+include_recipe "gitlab"
+include_recipe "mysql::server"
+
+
