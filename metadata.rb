@@ -8,3 +8,4 @@ version          '0.0.1'
 
 depends "gitlab", "6.1.0"
 depends "mysql"
+depends "rackops-rolebook"

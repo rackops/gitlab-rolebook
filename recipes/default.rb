@@ -9,6 +9,7 @@
 
 node.default["gitlab"]["https"] = true
 
+include_recipe "rackops-rolebook"
 include_recipe "gitlab"
 include_recipe "mysql::server"
 
