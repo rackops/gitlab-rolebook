@@ -27,9 +27,14 @@ apt = execute "apt-get install make" do
    action :nothing
 end
 
+node.default['postfix']['main']['myhostname'] = "gitlab.rackops.org"
+
 include_recipe "apt"
 include_recipe "rackops-rolebook"
 include_recipe "mysql::server"
 include_recipe "gitlab"
+include_recipe "postfix"
+
+
 
 
